@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rails</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body style="margin:5%;padding:5%">
+<div class="well">
+    <h1>My Rails App</h1>
+    <p>Welcome to my Sample Rails app with simple CRUD modules, with REACT app</p>
+    <br/>
+    </div>
+
+<%= yield %>
+    
+    <div class="well well-sm">
+    <%= link_to 'My Blog', controller: 'articles' %>
+    </div>
+
+    <div class="well well-sm" style="margin-bottom:1%">
+    <h5><%= link_to 'Home',  controller: 'welcome' %></h5>
+    </div>
+    <div class="well well-sm" style="margin-bottom:1%">
+    <h5><%= link_to 'REACT APP for Transaction Records',  controller: 'records' %></h5>
+    </div>
+</body>
+</html>

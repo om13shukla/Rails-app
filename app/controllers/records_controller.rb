@@ -1,0 +1,27 @@
+class RecordsController < ApplicationController
+    def new
+        @record=Record.new
+    end
+    
+    
+    def index
+      @records = Record.all
+    
+    end
+    
+    def create
+      @record = Record.new(record_params)
+
+      if @record.save
+        render json: @record
+      else
+        render json: @record.errors, status: :unprocessable_entity
+      end
+    end
+
+    private
+
+      def record_params
+        params.require(:record).permit(:title, :amount, :date)
+    end
+end    
