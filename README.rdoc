@@ -1,28 +1,12 @@
-== README
+== Rails app.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This implemets a basic CRUD operation on Resoucrces one with the help of REACT.JS and the Other without!
 
 Things you may want to cover:
 
-* Ruby version
+* Simple Blog Application With CSS Bootsrapped!
 
-* System dependencies
+* Rails Test Driven approach, Rails console and Unit Test
 
-* Configuration
+* Serving REACT App via  ruby Gem "react-rails"
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
